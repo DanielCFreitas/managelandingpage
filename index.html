@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Manage landing page</title>
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="./shared.css" />
+    <link rel="stylesheet" href="./css/background.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/intro.css" />
+    <link rel="stylesheet" href="./css/diferentials.css" />
+    <link rel="stylesheet" href="./css/depoiments.css" />
+    <link rel="stylesheet" href="./css/banner.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
+  <body>
+    <div class="background">
+      <img
+        class="background__image1"
+        src="./images/bg-tablet-pattern.svg"
+        alt=""
+      />
+      <img
+        class="background__image2"
+        src="./images/bg-tablet-pattern.svg"
+        alt=""
+      />
+    </div>
+
+    <header class="header">
+      <img class="header__logo" src="./images/logo.svg" alt="logo" />
+      <nav class="header__navigation-items" id="navigation">
+        <a class="header__navigation-item" href="">Pricing</a>
+        <a class="header__navigation-item" href="">Product</a>
+        <a class="header__navigation-item" href="">About Us</a>
+        <a class="header__navigation-item" href="">Careers</a>
+        <a class="header__navigation-item" href="">Community</a>
+      </nav>
+
+      <a class="getstarted-button hidemobile" href="">Get Started</a>
+      <img
+        src="./images/icon-hamburger.svg"
+        class="header__hamburguer"
+        id="hambuguerMenu"
+        onclick="changeHamburguerMenuIcon(event)"
+      />
+      <span
+        class="header__background-hamburguer"
+        id="headerBackgroundHamburguer"
+      ></span>
+    </header>
+
+    <section class="intro">
+      <div class="intro__text">
+        <h1 class="intro__text__title">
+          Bring everyone together to build better products.
+        </h1>
+        <h2 class="intro__text__subtitle">
+          Manage makes it simple for software teams to plan day-to-day tasks
+          while keeping the larger team goals in view.
+        </h2>
+        <a class="getstarted-button" href="">Get Started</a>
+      </div>
+
+      <div class="intro__illustration">
+        <img src="./images/illustration-intro.svg" alt="" />
+      </div>
+    </section>
+
+    <section class="diferentials">
+      <div class="diferentials__main">
+        <h1 class="diferentials__main__title">
+          What’s different about Manage?
+        </h1>
+        <h2
+          class="diferentials__main__subtitle diferentials__main__subtitle--center"
+        >
+          Manage provides all the functionality your team needs, without the
+          complexity. Our software is tailor-made for modern digital product
+          teams.
+        </h2>
+      </div>
+
+      <div class="diferentials__items">
+        <div class="diferetials__items__item">
+          <span>01</span>
+          <div class="diferentials__items__item__desc">
+            <h1 class="diferentials_items__item__title">
+              Track company-wide progress
+            </h1>
+            <h2 class="diferentials__main__subtitle">
+              See how your day-to-day tasks fit into the wider vision. Go from
+              tracking progress at the milestone level all the way done to the
+              smallest of details. Never lose sight of the bigger picture again.
+            </h2>
+          </div>
+        </div>
+        <div class="diferetials__items__item">
+          <span>02</span>
+          <div class="diferentials__items__item__desc">
+            <h1 class="diferentials_items__item__title">
+              Advanced built-in reports
+            </h1>
+            <h2 class="diferentials__main__subtitle">
+              Set internal delivery estimates and track progress toward company
+              goals. Our customisable dashboard helps you build out the reports
+              you need to keep key stakeholders informed.
+            </h2>
+          </div>
+        </div>
+        <div class="diferetials__items__item">
+          <span>03</span>
+          <div class="diferentials__items__item__desc">
+            <h1 class="diferentials_items__item__title">
+              Everything you need in one place
+            </h1>
+            <h2 class="diferentials__main__subtitle">
+              Stop jumping from one service to another to communicate, store
+              files, track tasks and share documents. Manage offers an
+              all-in-one team productivity solution.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="depoiments">
+      <div class="depoiments_title">What they’ve said</div>
+      <div class="depoiments__items">
+        <div class="depoiments__items_item">
+          <div class="depoiments__items__item__photo">
+            <img src="./images/avatar-anisha.png" alt="avatar" />
+          </div>
+          <div class="depoiments__items__item__name">Anisha Li</div>
+          <div class="depoiments__items_item_depoiment">
+            “Manage has supercharged our team’s workflow. The ability to
+            maintain visibility on larger milestones at all times keeps everyone
+            motivated.”
+          </div>
+        </div>
+        <div class="depoiments__items_item">
+          <div class="depoiments__items__item__photo">
+            <img src="./images/avatar-ali.png" alt="avatar" />
+          </div>
+          <div class="depoiments__items__item__name">Ali Bravo</div>
+          <div class="depoiments__items_item_depoiment">
+            “We have been able to cancel so many other subscriptions since using
+            Manage. There is no more cross-channel confusion and everyone is
+            much more focused.”
+          </div>
+        </div>
+        <div class="depoiments__items_item">
+          <div class="depoiments__items__item__photo">
+            <img src="./images/avatar-richard.png" alt="avatar" />
+          </div>
+          <div class="depoiments__items__item__name">Richard Watts</div>
+          <div class="depoiments__items_item_depoiment">
+            “Manage allows us to provide structure and process. It keeps us
+            organized and focused. I can’t stop recommending them to everyone I
+            talk to!”
+          </div>
+        </div>
+      </div>
+
+      <a class="getstarted-button hidemobile" href="">Get Started</a>
+    </section>
+
+    <section class="banner">
+      <div class="banner__content">
+        <div class="banner__text">
+          Simplify how your team works today.
+        </div>
+        <div class="banner__getstarted">
+          <a class="getstarted-button " href="">Get Started</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__logo__networks">
+          <img src="./images/logo.svg" alt="" />
+
+          <div class="footer__social-networks__items">
+            <img
+              class="footer__social-networks__items__item"
+              src="./images/icon-facebook.svg"
+              alt=""
+            />
+            <img
+              class="footer__social-networks__items__item"
+              src="./images/icon-youtube.svg"
+              alt=""
+            />
+            <img
+              class="footer__social-networks__items__item"
+              src="./images/icon-twitter.svg"
+              alt=""
+            />
+            <img
+              class="footer__social-networks__items__item"
+              src="./images/icon-pinterest.svg"
+              alt=""
+            />
+            <img
+              class="footer__social-networks__items__item"
+              src="./images/icon-instagram.svg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="footer__link__items">
+          <a class="footer__link__item">Home</a>
+          <a class="footer__link__item">Pricing</a>
+          <a class="footer__link__item">Products</a>
+          <a class="footer__link__item">About Us</a>
+          <a class="footer__link__item">Careers</a>
+          <a class="footer__link__item">Community</a>
+          <a class="footer__link__item">Privacy Policy</a>
+        </div>
+
+        <div class="footer__form">
+          <div class="footer__form__updates">
+            <input type="text" placeholder="Updates in your inbox..." />
+            <button>Go</button>
+          </div>
+          <div class="footer_form_rights">
+            Go Copyright 2020. All Rights Reserved
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

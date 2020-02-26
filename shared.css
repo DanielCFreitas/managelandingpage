@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap');
+:root {
+  --color-orange: hsl(12, 88%, 59%);
+  --color-orange-light: #f98f75;
+  --color-blue: hsl(228, 39%, 23%);
+  --color-blue-navy: #1e1e26;
+  --color-dark-grayish-blue: hsl(227, 12%, 61%);
+  --color-very-dark-blue: hsl(233, 12%, 13%);
+  --color-very-pale-red: hsl(13, 100%, 96%);
+  --color-very-light-gray: hsl(0, 0%, 98%)
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Be Vietnam';
+}
+
+body {
+  height: 100%;
+}
+
+.getstarted-button {
+  background: var(--color-orange);
+  height: 45px;
+  width: 140px;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 25px;
+  box-shadow: 0px 5px 10px var(--color-orange);
+  transition: background-color .5s ease-in-out;
+}
+
+.getstarted-button:hover, .getstarted-button:active {
+  background: var(--color-orange-light);
+}

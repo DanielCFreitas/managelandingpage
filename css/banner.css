@@ -1,0 +1,35 @@
+.banner {
+  background: var(--color-orange);
+  height: 220px;
+  width: 100%;
+}
+
+.banner__content {
+  height: 220px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1120px;
+  margin: 0px auto;
+}
+
+.banner__text {
+  color: white;
+  font-size: 35px;
+  max-width: 400px;
+  font-weight: bold;
+  line-height: 45px;
+}
+
+@media screen and (max-width: 1440px) {
+  .banner {
+    height: 270px;
+  }
+  .banner__content {
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    padding: 50px;
+    height: 270px
+  }
+}

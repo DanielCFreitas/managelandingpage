@@ -1,0 +1,28 @@
+.background {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.background__image1 {
+  position: absolute;
+  top: -240px;
+  right: -140px;
+}
+
+.background__image2 {
+  position: absolute;
+  top: 500px;
+  left: -440px;
+}
+
+@media screen and (max-width: 1440px) {
+  .background__image1 {
+    top: -300px;
+    right: -400px;
+  }
+}
